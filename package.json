@@ -22,6 +22,7 @@
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "browser": "dist/esm/index.js",
+  "types": "./types/index.d.ts",
   "scripts": {
     "commit": "cz",
     "prepublishOnly": "pnpm run build",
