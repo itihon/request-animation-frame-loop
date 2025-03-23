@@ -1,8 +1,16 @@
 ## Request animation frame loop
 
+### Installation
+
+```sh
+npm install request-animation-frame-loop
+```
+
 ### Usage
 
 ```js
+  import RequestAnimationFrameLoop from 'request-animation-frame-loop';
+
   function onStartCB(ctx, loop, timestamp) {
     // do something when a loop is started
   }
