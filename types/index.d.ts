@@ -23,5 +23,9 @@ export default class RequestAnimationFrameLoop {
     stopped(cb: RequestAnimationFrameStateCallback): RequestAnimationFrameLoop;
     start(): void;
     stop(): void;
+    /**
+     * @returns {boolean}
+     */
+    isRunning(): boolean;
 }
 export type RequestAnimationFrameStateCallback = (ctx: any, loop: RequestAnimationFrameLoop, timestamp: number) => any;
