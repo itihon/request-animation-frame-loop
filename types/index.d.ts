@@ -5,6 +5,10 @@
  * @param {number} timestamp
  */
 export default class RequestAnimationFrameLoop {
+    /**
+     * @param {FrameRequestCallback} cb
+    */
+    static afterAll(cb: FrameRequestCallback): void;
     constructor(ctx: any);
     /**
      * @param {RequestAnimationFrameStateCallback} cb
