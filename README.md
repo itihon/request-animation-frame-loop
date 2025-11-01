@@ -46,4 +46,9 @@ npm install request-animation-frame-loop
   
   rafLoop.stop();
 
+  // ... 
+  // ... 
+  
+  rafLoop.isRunning();
+
 ```
