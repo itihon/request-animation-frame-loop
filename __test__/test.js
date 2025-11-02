@@ -1,4 +1,4 @@
-import RequestAnimationFrameLoop from "./lib/index.js";
+import RequestAnimationFrameLoop from "../lib/index.js";
 
 const afterAllCallback = (timestamp) => {
   console.log('afterAll', timestamp);
@@ -6,7 +6,7 @@ const afterAllCallback = (timestamp) => {
 };
 
 const each1 = (ctx, loop, timestamp) => {
-  console.log(ctx.name, ctx.count, timestamp);
+  console.log(ctx.name, ctx.count, timestamp, document.body.getBoundingClientRect());
 
   if (ctx.count++ > 100) {
     loop.stop();
@@ -15,7 +15,7 @@ const each1 = (ctx, loop, timestamp) => {
 ;
 
 const each2 = (ctx, loop, timestamp) => {
-  console.log(ctx.name, ctx.count, timestamp);
+  console.log(ctx.name, ctx.count, timestamp, document.body.getBoundingClientRect());
 
   if (ctx.count++ > 100) {
     loop.stop();
@@ -23,7 +23,7 @@ const each2 = (ctx, loop, timestamp) => {
 };
 
 const each3 = (ctx, loop, timestamp) => {
-  console.log(ctx.name, ctx.count, timestamp);
+  console.log(ctx.name, ctx.count, timestamp, document.body.getBoundingClientRect());
 
   if (ctx.count++ > 100) {
     loop.stop();
@@ -31,7 +31,7 @@ const each3 = (ctx, loop, timestamp) => {
 };
 
 const each4 = (ctx, loop, timestamp) => {
-  console.log(ctx.name, ctx.count, timestamp);
+  console.log(ctx.name, ctx.count, timestamp, document.body.getBoundingClientRect());
 
   if (ctx.count++ > 100) {
     loop.stop();
